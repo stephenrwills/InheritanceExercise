@@ -6,11 +6,11 @@ namespace Inheritance
 {
     public class Animal
     {
-        public int age { get; set; }
-        public string species { get; set; }
+        public int Age { get; set; }
+        public string Species { get; set; }
         
-        public bool isAlive { get; set; }
+        public bool IsAlive { get; set; }
 
-        public bool canMove { get; set; }
+        public bool CanMove { get; set; }
     }
 }

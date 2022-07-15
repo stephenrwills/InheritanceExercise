@@ -13,5 +13,13 @@ namespace Inheritance
         public double WingSpan { get; set; }
 
         public double BeakLength { get; set; }
+
+        public void printBirdInfo()
+        {
+            Console.WriteLine($"Can Fly:{CanFly} ");
+            Console.WriteLine($"Has Wings: {HasWings}");
+            Console.WriteLine($"Beak Length: {BeakLength}");
+            Console.WriteLine($"Wing Span: {WingSpan}");
+        }
     }
 }

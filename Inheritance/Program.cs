@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Inheritance
 {
@@ -35,7 +36,7 @@ namespace Inheritance
             bird1.WingSpan = 3.5;
             bird1.HasWings = true;
 
-
+            
 
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Reptile class
@@ -52,9 +53,12 @@ namespace Inheritance
 
             };
 
-            var allAnimals = new Animal[] { bird1, chameleon };
-            Console.WriteLine(allAnimals);
-
+            Console.WriteLine("A chameleon has the following characteristics:"); 
+            chameleon.printReptileInfo();
+            Console.WriteLine();
+            Console.WriteLine("A certain bird has the following characteristics:");
+            bird1.printBirdInfo();
+           
 
         }
     }
