@@ -29,11 +29,33 @@ namespace Inheritance
              * Creatively display the class member values 
              */
 
+            var bird1 = new Bird();
+            bird1.CanFly = true;
+            bird1.BeakLength = 2.25;
+            bird1.WingSpan = 3.5;
+            bird1.HasWings = true;
+
+
+
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Reptile class
              *  
              * Creatively display the class member values 
              */
+
+            var chameleon = new Reptile()
+            {
+                AreColdBlooded = true,
+                LayEggs = true,
+                Habitat = "terrarium",
+                HasScales = true
+
+            };
+
+            var allAnimals = new Animal[] { bird1, chameleon };
+            Console.WriteLine(allAnimals);
+
+
         }
     }
 }
